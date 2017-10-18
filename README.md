@@ -1,2 +1,3 @@
 # smartnotesandchecks
-Weksle i checki
+
+Elektroniczny weksel i czek w formie elektronicznej na rejestrze rozproszonym
