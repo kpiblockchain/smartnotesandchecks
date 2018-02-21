@@ -20,11 +20,13 @@ contract SmartPromissoryNote {
     function initOwnershipChange(address newOwner) public ownerOnly() {
         require(!isOwnershipChangePending());
         require(newOwner != address(0));
+        
         newPendingOwner = newOwner;
     }
 
     function cancelOwnershipChange() public ownerOnly() {
         require(isOwnershipChangePending());
+
         newPendingOwner = address(0);
     }
 
@@ -53,6 +55,8 @@ contract SmartPromissoryNote {
     event NoteDataUploadedEvent();
 
     function loadData(string _data) public ownerOnly() {
+        require(!isOwnershipChangePending());
+
         NoteDataUploadedEvent();
         noteData = _data;
     }
@@ -61,6 +65,8 @@ contract SmartPromissoryNote {
     event SmartPromissoryNoteDestroyedEvent();
 
     function destroy() public ownerOnly() {
+        require(!isOwnershipChangePending());
+
         SmartPromissoryNoteDestroyedEvent();
         selfdestruct(owner);
     }
