@@ -20,7 +20,7 @@ contract SmartPromissoryNote {
     function initOwnershipChange(address newOwner) public ownerOnly() {
         require(!isOwnershipChangePending());
         require(newOwner != address(0));
-        
+
         newPendingOwner = newOwner;
     }
 
@@ -72,6 +72,6 @@ contract SmartPromissoryNote {
     }
 
     function() public payable {
-        revert(); // blokujemy przsyłanie ether'u na ten kontrakt
+        revert(); // blokujemy przesyłanie ether'u na ten kontrakt
     }
 }
