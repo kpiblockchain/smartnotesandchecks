@@ -54,11 +54,15 @@ contract SmartPromissoryNote {
     // - załadowanie dokumentu/weksla (dokument jest XML-em, ale w sumie kontakt nie musi w to wnikać) (tylko dla obecnego właściciela, możliwość wielokrotnego uruchamiania)
     event NoteDataUploadedEvent();
 
-    function loadData(string _data) public ownerOnly() {
+    function setData(string _data) public ownerOnly() {
         require(!isOwnershipChangePending());
 
         NoteDataUploadedEvent();
         noteData = _data;
+    }
+
+    function getData() public view returns(string) {
+        return noteData;
     }
 
     // - operacja „zniszczenia” weksla (zmiana właściciela na NULL, czy jakiś inny adres tego typu, usunięcie dokumentu weksla)
