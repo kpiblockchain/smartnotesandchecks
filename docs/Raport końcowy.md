@@ -533,7 +533,7 @@ lub zaciągnięcia nowego zobowiązania wekslowego przez wystawienie weksla.
 W przeciwieństwie do weksla papierowego, dopuszczającego indos przez sam podpis
 na rewersie weksla (art. 13 ust. 2 Prawa wekslowego), w przypadku weksla
 elektronicznego taki indos nie będzie możliwy, bowiem ze względu na jego formę
-nie jest możliwe wskazanie awersu ani rewersu.
+nie jest możliwe wskazanie ani awersu ani rewersu.
 Stworzone rozwiązanie umożliwia jednakże dokonanie indosu in blanco lub na
 okaziciela, a więc bez wskazywania tożsamości nabywcy poprzez złożenie
 odpowiedniego oświadczenia.
