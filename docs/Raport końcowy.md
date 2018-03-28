@@ -467,18 +467,6 @@ się z kilku etapów i odzwierciedla teorię umowną wystawienia weksla, zgodnie
 którą oprócz złożenia oświadczenia przez wystawcę (podpisania weksla) konieczne
 jest jeszcze oświadczenie remitenta, składane w sposób dorozumiany przez
 przyjęcie weksla.
-Podstawowe etapy wystawienia weksla są następujące:
-
-1. Wystawca wypełnia weksel i podpisuje go kwalifikowanym podpisem
-elektronicznym. Może w tym celu posłużyć się specjalną aplikacją;
-
-1. Wystawca inicjuje transakcję na blockchainie poprzez umieszczenie na nim
-smart kontraktu, który poprzez odpowiedni zapis pozwala na ustalenie w każdym
-czasie posiadacza weksla. [...]
-
-1. Remitent akceptuje transakcję zainicjowaną przez wystawcę poprzez wywołanie
-odpowiedniej funkcji w smart kontrakcie, która przyporządkowuje mu faktyczne
-władanie nad wekslem [...], w ten sposób przyjmując weksel.
 
 ## Dalszy obrót wekslem elektronicznym
 
@@ -548,21 +536,6 @@ przez przelew.
 Jednak w takim wypadku odpowiednia umowa musi być zawarta poza blockchainem,
 ponieważ rozwiązanie nie przewiduje funkcjonalności umożliwiającej zawieranie
 umów przelewu.
-
-Podstawowe etapy obrotu wekslem elektronicznym są następujące:
-
-1. Posiadacz weksla podpisuje go kwalifikowanym podpisem elektronicznym jako
-indosant. Może przy tym oznaczyć nabywcę lub dokonać indosu in blanco, a także
-dopisać do indosu dodatkowe klauzule;
-
-1. Posiadacz weksla inicjuje transakcję na blockchainie poprzez wywołanie
-odpowiedniej funkcji w smart kontrakcie, która jest równoważna z przeniesieniem
-władztwa faktycznego na inną osobę[...].
-Opisana operacja może zostać wykonana także bez dokonywania indosu, co umożliwia
-zbywanie weksla przez przelew.
-
-1. Nabywca akceptuje transakcję zainicjowaną przez wystawcę poprzez [...],
-w ten sposób nabywając weksel.
 
 ## Zapłata weksla elektronicznego
 
